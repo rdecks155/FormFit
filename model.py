@@ -71,16 +71,16 @@ if __name__ == "__main__":
     model.evaluate(x_test, y_test)
 
 
-    model = tf.keras.Sequential()
-    model.add(tf.keras.layers.Flatten(input_shape=(100,100,3)))
-    model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
-    model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
-    model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
-    model.add(tf.keras.layers.Dense(1, activation="sigmoid"))
+    # model = tf.keras.Sequential()
+    # model.add(tf.keras.layers.Flatten(input_shape=(100,100,3)))
+    # model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
+    # model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
+    # model.add(tf.keras.layers.Dense(3, activation="sigmoid"))
+    # model.add(tf.keras.layers.Dense(1, activation="sigmoid"))
 
-    model.compile(optimizer="sgd",loss="binary_crossentropy",metrics=["accuracy"])
+    # model.compile(optimizer="sgd",loss="binary_crossentropy",metrics=["accuracy"])
 
-    model.fit(x_train,y_train,epochs=10,validation_data=(x_test,y_test))
+    # model.fit(x_train,y_train,epochs=10,validation_data=(x_test,y_test))
 
 
 
