@@ -66,7 +66,6 @@ if __name__ == "__main__":
     # plt.show()
 
     model = tf.keras.models.load_model("128Dx2Relu.model")
-    model = tf.keras.models.load_model("128Dx2Relu.model")
     model.summary()
     model.evaluate(x_test, y_test)
 
